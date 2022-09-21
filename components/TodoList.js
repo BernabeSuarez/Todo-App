@@ -24,7 +24,7 @@ export default function TodoList({ item, deleteItem }) {
 }
 
 const ListContainer = styled.TouchableOpacity`
-  background-color: whitesmoke;
+  background-color: #FAEDBB;
   height: auto;
   width: 350px;
   margin-bottom: 30px;
@@ -51,7 +51,7 @@ const TextItem = styled.Text`
 `;
 
 const TextDate = styled.Text`
-  color: goldenrod;
+  color: #0516C2 ;
   font-size: 12px;
   margin-right: 20px;
 

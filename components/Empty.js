@@ -19,8 +19,8 @@ const ComponentContainer = styled.View`
 `;
 
 const EmptyImage = styled.Image`
-  width: 150px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   margin-top:35px;
 `;
 

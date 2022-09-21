@@ -4,12 +4,12 @@ import styled from "styled-components";
 let today = new Date().toISOString().slice(0, 10); //indica la fecha actual
 
 export default function Header() {
-    return (
-        <ComponentContainer>
-            <HeaderText>Notas   </HeaderText>
-            <HeaderList>{today}</HeaderList>
-        </ComponentContainer>
-    );
+  return (
+    <ComponentContainer>
+      <HeaderText>Notas   </HeaderText>
+      <HeaderList>{today}</HeaderList>
+    </ComponentContainer>
+  );
 }
 
 const ComponentContainer = styled.View`
@@ -23,6 +23,7 @@ const HeaderText = styled.Text`
   color: white;
   font-family:"Poppins";
   font-size: 30px;
+  margin-left: 15px;
 `;
 
 const HeaderList = styled.Text`
