@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { View, TextInput, Text, TouchableOpacity } from 'react-native'
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import styled from 'styled-components';
 
 const Container = styled.View`
@@ -23,16 +24,12 @@ const Button = styled.TouchableOpacity`
   width: 50px;
   justify-content: center;
   align-items: center;
-  background-color: #808080;
+  background-color: transparent;
   margin-bottom: 20px;
   border-radius: 10px;
   `
 
-const Add = styled.Text`
-font-size:12px;
-color: white;
-font-family:"Poppins";
-`
+
 
 export default function AddInput({ submitHandler }) {
     const [value, setValue] = useState("");
@@ -53,7 +50,7 @@ export default function AddInput({ submitHandler }) {
 
                 }}
             >
-                <Add>Add</Add>
+                <FontAwesome name="pencil-square-o" size={40} color="white" />
             </Button>
         </Container>
     );

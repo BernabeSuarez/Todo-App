@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 export default function Empty() {
-    return (
-        <ComponentContainer>
-            <EmptyImage
-                source={require("../assets/note.png")}
-            />
-            <EmptyText>Agregar notas</EmptyText>
-        </ComponentContainer>
-    );
+  return (
+    <ComponentContainer>
+      <EmptyImage
+        source={require("../assets/note.png")}
+      />
+      <EmptyText>Agregar notas</EmptyText>
+    </ComponentContainer>
+  );
 }
 
 const ComponentContainer = styled.View`
@@ -21,6 +21,7 @@ const ComponentContainer = styled.View`
 const EmptyImage = styled.Image`
   width: 150px;
   height: 100px;
+  margin-top:35px;
 `;
 
 const EmptyText = styled.Text`

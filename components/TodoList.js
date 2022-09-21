@@ -1,26 +1,26 @@
 import React from "react";
 import { View } from "react-native";
 import { Octicons } from "@expo/vector-icons"; //iconos de react native
-import { MaterialIcons } from "@expo/vector-icons";
+import { AntDesign } from '@expo/vector-icons';
 import styled from "styled-components";
 
 export default function TodoList({ item, deleteItem }) {
-    return (
-        <ComponentContainer>
-            <ListContainer>
-                <CirlceContainer>
-                    <Octicons name="dot-fill" size={12} color="black" />
-                </CirlceContainer>
-                <View>
-                    <TextItem>{item.value}</TextItem>
-                    <TextDate> Tarea</TextDate>
-                </View>
-                <IconContainer onPress={() => deleteItem(item.key)}>
-                    <MaterialIcons name="delete" size={24} color="coral" />
-                </IconContainer>
-            </ListContainer>
-        </ComponentContainer>
-    );
+  return (
+    <ComponentContainer>
+      <ListContainer>
+        <CirlceContainer>
+          <Octicons name="dot-fill" size={12} color="black" />
+        </CirlceContainer>
+        <View>
+          <TextItem>{item.value}</TextItem>
+          <TextDate> Tarea</TextDate>
+        </View>
+        <IconContainer onPress={() => deleteItem(item.key)}>
+          <AntDesign name="delete" size={24} color="red" />
+        </IconContainer>
+      </ListContainer>
+    </ComponentContainer>
+  );
 }
 
 const ListContainer = styled.TouchableOpacity`
@@ -64,7 +64,7 @@ const IconContainer = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
 
   height: 40px;
 
