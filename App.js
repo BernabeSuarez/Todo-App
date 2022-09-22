@@ -10,7 +10,7 @@ import TodoList from "./components/TodoList";
 
 const ComponentContainer = styled.View`
 
-  background-color: midnightblue;
+  background-color: #102f49;
   height: 100%;
   flex-direction: column;
   align-items: center;
