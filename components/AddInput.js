@@ -41,12 +41,16 @@ export default function AddInput({ submitHandler }) {
     return (
         <Container>
             <InputContainer>
-                <Input placeholder="Agregar Nota..." onChangeText=
+                <Input
+                    ref={note => { this.noteInput = note }}
+                    placeholder="Agregar Nota..."
+                    onChangeText=
                     {onChangeText} />
             </InputContainer>
             <Button
                 onPress={() => {
                     setValue(submitHandler(value));
+                    this.noteInput.clear()  //liompiar los inputs
 
                 }}
             >
